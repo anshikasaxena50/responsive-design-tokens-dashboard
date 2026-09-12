@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive design tokens dashboard">
+    <title>Responsive Design Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header class="site-header">
+    <div class="container header-content">
+        <div>
+            <p class="eyebrow">Design System</p>
+            <h1>Responsive Dashboard</h1>
+            <p class="subtitle">Mobile-first CSS architecture with modern design tokens.</p>
+        </div>
+
+        <button class="theme-toggle" type="button" onclick="document.body.classList.toggle('dark-theme')">
+            Toggle Theme
+        </button>
+    </div>
+</header>
+
+<nav class="main-nav" aria-label="Primary navigation">
+    <div class="container nav-content">
+        <a href="#overview">Overview</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#projects">Projects</a>
+        <a href="#activity">Activity</a>
+    </div>
+</nav>
+
+<main class="container">
+
+    <section class="hero" id="overview">
+        <div>
+            <p class="eyebrow">Responsive by default</p>
+            <h2>Modern Dashboard Architecture</h2>
+            <p>
+                A flexible interface built with CSS Grid, Flexbox,
+                custom properties, responsive breakpoints and modern visual effects.
+            </p>
+        </div>
+    </section>
+
+    <section class="dashboard-grid" aria-label="Dashboard overview">
+
+        <article class="dashboard-card">
+            <div class="card-icon">01</div>
+            <h3>Design Tokens</h3>
+            <p>Reusable colors, typography, spacing, shadows and border-radius values.</p>
+            <strong>12 Tokens</strong>
+        </article>
+
+        <article class="dashboard-card">
+            <div class="card-icon">02</div>
+            <h3>Responsive Grid</h3>
+            <p>Fluid layouts that adapt across mobile, tablet and desktop screens.</p>
+            <strong>4 Breakpoints</strong>
+        </article>
+
+        <article class="dashboard-card">
+            <div class="card-icon">03</div>
+            <h3>Flexbox Layout</h3>
+            <p>Flexible navigation and component alignment using modern CSS.</p>
+            <strong>Flexible</strong>
+        </article>
+
+        <article class="dashboard-card">
+            <div class="card-icon">04</div>
+            <h3>Glassmorphism</h3>
+            <p>Subtle transparency and backdrop blur create a modern visual style.</p>
+            <strong>Enabled</strong>
+        </article>
+
+        <article class="dashboard-card">
+            <div class="card-icon">05</div>
+            <h3>Theme System</h3>
+            <p>Light and dark theme variables make the interface adaptable.</p>
+            <strong>2 Themes</strong>
+        </article>
+
+        <article class="dashboard-card">
+            <div class="card-icon">06</div>
+            <h3>Mobile First</h3>
+            <p>The layout starts from small screens and progressively expands.</p>
+            <strong>320px+</strong>
+        </article>
+
+    </section>
+
+    <section class="content-panel" id="analytics">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Performance</p>
+                <h2>Analytics Overview</h2>
+            </div>
+            <span class="status-badge">Live</span>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat">
+                <span>Visitors</span>
+                <strong>12,840</strong>
+                <small>+18.4%</small>
+            </div>
+
+            <div class="stat">
+                <span>Projects</span>
+                <strong>48</strong>
+                <small>+6.2%</small>
+            </div>
+
+            <div class="stat">
+                <span>Completion</span>
+                <strong>94%</strong>
+                <small>+3.8%</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-panel" id="projects">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Workspace</p>
+                <h2>Recent Projects</h2>
+            </div>
+        </div>
+
+        <div class="project-list">
+            <article class="project-item">
+                <div>
+                    <h3>AI Study Assistant</h3>
+                    <p>AI-powered student learning application.</p>
+                </div>
+                <span class="project-tag">AI</span>
+            </article>
+
+            <article class="project-item">
+                <div>
+                    <h3>Weather Application</h3>
+                    <p>Responsive weather information interface.</p>
+                </div>
+                <span class="project-tag">Web</span>
+            </article>
+
+            <article class="project-item">
+                <div>
+                    <h3>Accessibility Dashboard</h3>
+                    <p>Semantic and accessible enterprise dashboard.</p>
+                </div>
+                <span class="project-tag">A11y</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="content-panel" id="activity">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Latest Updates</p>
+                <h2>Recent Activity</h2>
+            </div>
+        </div>
+
+        <ul class="activity-list">
+            <li>
+                <span class="activity-dot"></span>
+                <div>
+                    <strong>Responsive layout updated</strong>
+                    <p>Mobile-first grid improvements were applied.</p>
+                </div>
+            </li>
+
+            <li>
+                <span class="activity-dot"></span>
+                <div>
+                    <strong>Design tokens added</strong>
+                    <p>Reusable CSS custom properties are now available.</p>
+                </div>
+            </li>
+
+            <li>
+                <span class="activity-dot"></span>
+                <div>
+                    <strong>Theme support enabled</strong>
+                    <p>Light and dark visual variables are supported.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>&copy; 2026 Responsive Design Dashboard</p>
+        <p>Built with CSS Grid, Flexbox and Design Tokens.</p>
+    </div>
+</footer>
+
+</body>
+</html>
